@@ -10,10 +10,10 @@ const CommentSection = ({ comments }) => {
   return (
     <div>
       {/* map through the comments data and return the Comment component */}
-      {newComments.map((item, index) => {
-        return <Comment username={item.username} text={item.text} key={index} />;
-      })
-      <CommentInput newComments = {newComments} setComments = {setComments}/>
+      {comments.map(comment => {
+        return <Comment comment={comment} />;
+      })}
+      <CommentInput />
     </div>
   );
 };

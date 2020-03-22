@@ -4,11 +4,11 @@ import React, { useState } from "react";
 import Post from "./Post";
 import "./Posts.css";
 // import data
-import data from "../dummy-data.js";
+import data from "../../dummy-data.js";
 
 const PostsPage = () => {
   // set up state for your data
-  const [state] = useState(dummyData);
+  const [state] = useState(data);
   console.log(state);
   return (
     <div className="posts-container-wrapper">
